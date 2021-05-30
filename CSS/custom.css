@@ -1,0 +1,1268 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Commom CSS */
+
+.about-header h6, .services-header h6, .portfolio-header h6, .pricing-header h6, .test-header h6, .fqa-header h6, .team-header h6, .contact-header h6 {
+    color: gray;
+    letter-spacing: 1px;
+}
+
+.about-header h6::after, .services-header h6::after, .portfolio-header h6::after, .pricing-header h6::after, .test-header h6::after, .fqa-header h6::after, .team-header h6::after, .contact-header h6::after {
+    content: " ";
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    background: orangered;
+    margin: 4px 10px;
+}
+
+.about-header h2, .services-header h2, .portfolio-header h2, .pricing-header h2, .test-header h2, .fqa-header h2, .team-header h2, .contact-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 40px;
+}
+.about,.services,.portfolio,.pricing,.team,.contact{
+    padding: 4rem 0rem 0rem 0rem !important; 
+}
+
+
+/* This is for the ScrollSpy */
+
+body {
+    position: relative;
+}
+
+/* This is For Smooth Srcoll */
+
+.html {
+    scroll-behavior: smooth;
+}
+
+/* For Back to top Button */
+
+.backtotop {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+}
+
+.back {
+    display: none;
+}
+
+.back a {
+    color: white;
+    padding: 0.500rem 0.700rem 0.500rem 0.700rem;
+    border-radius: 3.5rem 3.5rem 3.5rem 3.5rem;
+    font-size: 1.1rem;
+    background-color: orangered;
+}
+
+.back a:hover {
+    background-color: black;
+    color: orangered;
+    transition: 0.5s ease-in-out;
+}
+
+/* Background color for navbar and carousel */
+
+.bg {
+    background: linear-gradient( 0deg, #2a2c39 0%, #33364a 100%);
+}
+
+/* navbar */
+
+.nav-item {
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.navbar-brand, .nav-link, .btn {
+    color: white;
+}
+
+.navbar-brand{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar .container {
+    padding: 0rem !important;
+}
+
+.nav-link{
+    border-radius: 1rem;
+}
+
+.nav-link:hover, .btn:hover {
+    background: #ef6603;
+    color: white;
+    transition: 0.10s ease-in-out;
+    border-radius: 1rem;
+    line-height: 1.5;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+/* For Dropdonw hover effect */
+
+.navbar-nav li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown .btn {
+    padding: 0.5rem !important;
+}
+
+/* carousel */
+
+.carousel {
+    padding: 3.5rem 0.5rem 2rem 0.5rem;
+}
+
+.carousel-item h2, .carousel-item p, .carousel-btn {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.carousel-item h2 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.carousel-item p {
+    width: 60%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+    margin: 1rem auto 4rem auto;
+    text-align: center;
+}
+
+.carousel-btn button {
+    padding: 0.6rem 1.7rem 0.6rem 1.7rem;
+    border-radius: 1.5rem;
+    border: 2px solid #ef6603;
+    font-weight: 500;
+    line-height: 1;
+    font-family: "Raleway", sans-serif;
+    background: transparent;
+}
+.carousel-btn button a{
+    text-decoration: none;
+    color: white;
+} 
+
+.carousel-btn button:hover {
+    background-color: #ef6603;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.less, .great {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.less {
+    position: relative;
+    left: -25%;
+}
+
+.great {
+    position: relative;
+    right: -15%;
+}
+
+.carousel-control-prev {
+    height: 20rem;
+}
+
+.carousel-control-next {
+    height: 20rem;
+}
+
+/* This For the Waves */
+
+.hero-waves {
+    display: block;
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+.wave1 use {
+    -webkit-animation: move-forever1 10s linear infinite;
+    animation: move-forever1 10s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.wave2 use {
+    -webkit-animation: move-forever2 8s linear infinite;
+    animation: move-forever2 8s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.wave3 use {
+    -webkit-animation: move-forever3 6s linear infinite;
+    animation: move-forever3 6s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+@-webkit-keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@-webkit-keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@-webkit-keyframes move-forever3 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@keyframes move-forever3 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+/* about */
+
+
+.abt-para {
+    display: flex;
+}
+
+.row .col-lg-6 p{
+    padding: 0rem 0rem 0rem 0rem;
+    font-size: 1.1rem;
+}
+
+.tick {
+    padding: 0rem 0.5rem 1rem 0rem;
+    color: orangered;
+}
+
+.abt-btn {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 0.50rem;
+    background-color: transparent;
+    border-color: orangered;
+    color: orangered;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.abt-btn:hover {
+    background-color: orangered;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+/* Features */
+
+.features {
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.feature-1, .feature-2, .feature-3, .feature-4 {
+    border: 1px solid rgb(181, 178, 178);
+    display: flex;
+    padding: 0rem !important;
+    cursor: pointer;
+    margin-left: 0.9rem;
+    width: 23%;
+}
+
+
+/* .wifi:hover, .sheild:hover, .sun:hover, .store:hover, .col-3-1-para p:hover {
+    color: white !important;
+} */
+
+.col-active{
+    border: 1px solid rgb(181, 178, 178);
+    display: flex;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.col-active svg{
+    fill:white !important;
+}
+.row-features  input[type="checkbox"] {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.col-active p{
+    color:white !important;
+}
+
+.wifi, .sheild, .sun, .store {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.para-feautres p {
+    padding: 0.5rem 0.3rem 0.3rem 0.3rem;
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 0rem !important;
+}
+
+.row-lower {
+    padding: 3rem 0rem 1rem 0rem;
+}
+
+.features-lower-para {
+    display: flex;
+}
+
+.row-lower .col-lg-6 p, .features-lower-para {
+    color: gray;
+}
+
+.features-left-2, .features-left-3, .features-left-4, .features-right-2, .features-right-3, .features-right-4 {
+    display: none;
+}
+
+/* call */
+
+.call {
+    background-color: #2a2c39;
+    padding: 3rem 0rem 2rem 0rem;
+}
+
+.col-lg-9 h3, .col-lg-9 p {
+    color: white;
+}
+
+.call-btn {
+    padding-top: 3rem;
+}
+
+.call-btn button {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 1.4rem;
+    font-weight: 500;
+    border: transparent;
+    background: orangered;
+    color: white;
+}
+
+/* service */
+
+.services {
+    padding: 5rem 0rem 2rem 0rem;
+}
+
+.breif {
+    padding: 30px;
+    border-radius: 0.500rem;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
+}
+
+.services .breif:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
+}
+
+.suitcase {
+    position: absolute;
+    left: -40px;
+    top: calc(40% - 30px);
+}
+
+.services-content h4 {
+    cursor: pointer;
+}
+
+.services-content p, .services-content h4 {
+    padding-left: 3rem;
+}
+
+.services-content h4:hover {
+    color: orangered;
+    transition: 0.5s ease-in-out;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 3rem 0rem 8rem 0rem;
+}
+
+.portfolio-filter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.all .active {
+    color: orangered;
+}
+
+.all, .app, .card1, .web {
+    cursor: pointer;
+    margin: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.all::before, .app::before, .card1::before, .web::before {
+    content: "[";
+    color: orangered;
+    margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.all::after, .app::after, .card1::after, .web::after {
+    content: "]";
+    color: orangered;
+    margin: 0rem 0rem 0rem 0.5rem;
+}
+
+.row-portfolio {
+    padding: 2rem 0rem 0rem 0rem;
+    position: relative;
+}
+
+.port-1 {
+    position: relative;
+}
+
+.port-4 {
+    position: absolute;
+    right: 0px;
+    top: 260px;
+}
+
+.port-5 {
+    position: absolute;
+    right: 380px;
+    top: 300px;
+}
+
+.port-6 {
+    position: relative;
+}
+
+.port-7 {
+    position: absolute;
+    right: 0px;
+    top: 520px;
+}
+
+.port-8 {
+    position: absolute;
+    right: 0px;
+    top: 780px;
+}
+
+.port-9 {
+    position: absolute;
+    left: 380px;
+    top: 860px;
+}
+
+figure {
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s linear;
+}
+
+.figure-img {
+    margin-bottom: 0rem !important;
+    line-height: 0rem !important;
+}
+
+figure img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* testiminals */
+
+.test {
+    padding: 10rem 0rem 2rem 0rem;
+}
+
+.owl-carouse {
+    display: flex;
+}
+
+.port-para {
+    width: 30%;
+    background: white;
+    margin: 30px 20px;
+    border-radius: 0.5rem;
+}
+
+.owl-carousel p, .owl-carousel h4, .owl-carousel h6 {
+    text-align: center;
+    color: black;
+}
+
+.test-item h6 {
+    padding-bottom: 2rem;
+}
+
+.test-item {
+    padding: 30px 30px 0px 30px!important;
+    margin: 1rem;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
+}
+
+.test-item p {
+    margin-bottom: 1rem!important;
+}
+
+.owl-carousel img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 90px !important;
+    margin-bottom: 0.5rem;
+}
+
+.owl-dots {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.testimonial .owl-dot {
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd !important;
+}
+
+.testimonial .owl-dot.active {
+    background-color: #ef6603 !important;
+}
+
+/* pricing */
+
+.pricing {
+    width: 100%;
+    padding: 4rem 0rem 3rem 0rem;
+}
+
+.pricing-item, .pricing-item-business {
+    text-align: center;
+    border: 2px solid whitesmoke;
+}
+
+.pricing-item-business {
+    border: 2px solid orangered;
+}
+
+.pricing-item-business h3 {
+    background: orangered;
+    color: white;
+    padding: 1.4rem;
+}
+
+.pricing-item h3 {
+    padding: 1.4rem;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.pricing-item h4 span, .pricing-item-business h4 span {
+    color: gray;
+    margin-left: 0.2rem;
+    font-size: 1.4rem;
+}
+
+.pricing-item h4, .pricing-item-business h4 {
+    padding: 1.1rem;
+}
+
+.pricing-item h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-item .sup, .pricing-item-business .sup {
+    color: orangered;
+}
+
+.pricing-item ul, .pricing-item-business ul {
+    padding-left: 0rem !important;
+}
+
+.pricing-item ul li, .pricing-item-business ul li {
+    list-style: none;
+    padding: 0.1rem 0rem 0.1rem 0rem;
+}
+
+.na {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.pricing-btn {
+    padding: 1.1rem 0rem 1.1rem 0rem;
+    background-color: whitesmoke;
+}
+
+.pricing-btn button {
+    padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+    border-radius: 50px;
+    border: transparent;
+    background-color: orangered;
+    color: white;
+}
+
+.pricing-item {
+    overflow: hidden;
+}
+
+.advance {
+    width: 200px;
+    position: absolute;
+    top: 18px;
+    right: -70px;
+    transform: rotate(45deg);
+    z-index: 1;
+    font-size: 14px;
+    padding: 1px 0 3px 0;
+    background: orangered;
+    color: #fff;
+}
+
+/* fqa */
+
+.fqa {
+    padding: 3rem 0rem 4rem 0rem;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-button::before {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 1rem;
+    content: "";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+
+/* team */
+
+.team {
+    padding: 3rem 0rem 4rem 0rem;
+}
+
+.card, .card img {
+    border-radius: 0.300rem;
+}
+
+.social-1, .social-2, .social-3, .social-4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon-1, .social-icon-2, .social-icon-3, .social-icon-4 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding: 0.5rem;
+    display: none;
+}
+
+.twitter, .facebook, .instagram, .linkedin {
+    background-color: rgba(239, 102, 3, 0.8);
+    color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 50%;
+}
+
+/* contact */
+
+.contact {
+    padding: 4rem 0rem 4rem 0rem !important;
+}
+
+.icon {
+    float: left;
+    display: flex;
+    margin-top: 0.2rem;
+    background: orangered;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 100px;
+}
+
+.location-content p, .location-content h3 {
+    padding-left: 2.5rem;
+}
+
+.name input {
+    width: 49%;
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+    border: 1px solid gray;
+}
+
+.subject input {
+    width: 99%;
+    padding: 0.8rem;
+    border: 1px solid rgb(121, 113, 113);
+}
+
+.message textarea {
+    width: 99%;
+    margin-top: 2rem;
+    padding: 0.8rem;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit button {
+    padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+    color: white;
+    background: orangered;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border: transparent;
+}
+
+/* footer */
+
+.footer {
+    padding: 3rem 0rem 3rem 0rem;
+    text-align: center;
+    background-color: #33364a;
+}
+
+.footer .row h2, .footer .row p, .footer .row span {
+    color: white;
+    font-size: 500;
+}
+
+.footer-icon #twitter, .footer-icon #facebook, .footer-icon #instagram, .footer-icon #linkedin {
+    background-color: orangered;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+
+/* only for portfolio */
+
+@media only screen and (min-width:1400px) and (max-width:4000px) {
+    /* Portfolio */
+    .portfolio {
+        padding-bottom: 10rem !important;
+    }
+    .port-4 {
+        position: absolute;
+        right: 0px !important;
+        top: 300px !important;
+    }
+    .port-5 {
+        position: absolute;
+        left: 440px;
+        top: 350px;
+    }
+    .port-6 {
+        position: relative;
+    }
+    .port-7 {
+        position: absolute;
+        top: 600px;
+    }
+    .port-8 {
+        position: absolute;
+        top: 900px;
+    }
+    .port-9 {
+        position: absolute;
+        top: 1000px;
+        left: 440px;
+    }
+}
+
+/* Large screen lg */
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .carousel {
+        padding: 3.5rem 0rem 1.5rem 0rem !important;
+    }
+    .carousel-item h2 {
+        text-align: center;
+        font-size: 3rem !important;
+    }
+    .carousel-item p {
+        width: 65%;
+        font-size: 1rem;
+        margin: 0.5rem auto 1rem auto !important;
+        text-align: center;
+    }
+    /* features */
+    .features-container {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-3-1, .col-3-2, .col-3-3, .col-3-4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0.10rem !important;
+        margin: 0.5rem !important;
+    }
+    .wifi, .sheild, .sun, .store {
+        font-size: 1.5rem;
+        align-self: center;
+        /* padding: 0.10rem !important; */
+    }
+    .col-3-1-para {
+        display: flex;
+    }
+    /* Portfolio */
+    .portfolio {
+        padding-bottom: 6rem !important;
+    }
+    .port-4 {
+        position: absolute;
+        right: 0px !important;
+        top: 230px !important;
+    }
+    .port-5 {
+        position: absolute;
+        left: 320px;
+        top: 260px;
+    }
+    .port-6 {
+        position: relative;
+    }
+    .port-7 {
+        position: absolute;
+        top: 460px;
+    }
+    .port-8 {
+        position: absolute;
+        top: 670px;
+    }
+    .port-9 {
+        position: absolute;
+        top: 730px;
+        left: 320px;
+    }
+    .card-body h4 {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    /* test */
+    .port-para {
+        width: 100%;
+        margin-left: 0rem !important;
+        padding: 3rem;
+    }
+    .test-item p {
+        width: 95%;
+    }
+    .carousel-inner {
+        height: 24rem;
+    }
+    .carousel-indicators [data-bs-target] {
+        position: relative;
+        top: 2rem;
+    }
+}
+
+/* tablet md */
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .navbar-nav li:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar-toggler {
+        background: transparent;
+        border: 0px solid white;
+        padding: 0rem !important;
+    }
+    .nav-link, .dropdown .btn {
+        color: black;
+        padding: 0.5rem !important;
+    }
+    .navbar-nav {
+        width: 100%;
+        border-radius: 1rem;
+        background-color: white;
+        padding: 0.2rem 0rem 0.2rem 0rem !important;
+    }
+    .dropdown .btn {
+        padding: 0rem 0rem 0rem 1rem !important;
+    }
+    .bar {
+        color: white;
+        font-size: 1.5rem;
+    }
+    /* carousel */
+    .carousel {
+        padding: 2.8rem 0rem 1.5rem 0rem !important;
+    }
+    .carousel-item h2 {
+        text-align: center;
+        font-size: 28px !important;
+    }
+    .carousel-item p {
+        width: 75%;
+        margin: 0.5rem auto 2rem auto !important;
+        text-align: center;
+    }
+    /* features */
+    .features-container {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .row-features {
+        display: flex;
+        justify-content: center;
+    }
+    .feature-1, .feature-2, .feature-3, .feature-4 {
+        display: flex;
+        justify-content: center;
+        padding: 0.8rem !important;
+        margin: 0rem 0.5rem 0rem 0.5rem !important;
+        width: 22%;
+    }
+    .wifi, .sheild, .sun, .store {
+        font-size: 1.4rem;
+        padding: 0.3rem !important;
+    }
+    .para-feautres p {
+        display: none;
+    }
+    .row-lower .col-lg-6 img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* call */
+    .col-lg-9, .col-lg-3 {
+        text-align: center;
+    }
+    /* Portfolio */
+    .portfolio {
+        padding-bottom: 0.500rem !important;
+    }
+    .port-4, .port-5, .port-6, .port-7, .port-8, .port-9 {
+        position: relative;
+        right: 0px !important;
+        left: 0px !important;
+        top: 0px !important;
+    }
+    /* test */
+    .port-para {
+        width: 100%;
+        margin-left: 0rem !important;
+        padding: 3rem;
+    }
+    .test-item p {
+        width: 95%;
+    }
+    .carousel-inner {
+        height: 27rem;
+    }
+    .carousel-indicators [data-bs-target] {
+        position: relative;
+        top: 2rem;
+    }
+}
+
+/* Medium Mobile sm */
+
+@media only screen and (min-width:577px) and (max-width:767px) {
+    .navbar-nav li:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar-toggler {
+        background: transparent;
+        border: 0px solid white;
+        padding: 0rem !important;
+    }
+    .nav-link, .dropdown .btn {
+        color: black;
+        padding: 0.5rem !important;
+    }
+    .navbar-nav {
+        width: 100%;
+        border-radius: 1rem;
+        background-color: white;
+        padding: 0.2rem 0rem 0.2rem 0rem !important;
+    }
+    .dropdown .btn {
+        padding: 0rem 0rem 0rem 1rem !important;
+    }
+    .bar {
+        color: white;
+        font-size: 1.5rem;
+    }
+    /* carousel */
+    .carousel {
+        padding: 2.5rem 0.5rem 1rem 0.5rem !important;
+    }
+    .carousel-item h2 {
+        text-align: center;
+        font-size: 1.9rem !important;
+    }
+    .carousel-item p {
+        width: 75%;
+        font-size: 1.1rem;
+        margin: 0.5rem auto 1.5rem auto !important;
+        text-align: center;
+    }
+    /* features */
+    .features-container {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .row-features {
+        display: flex;
+        justify-content: center;
+    }
+    .feature-1, .feature-2, .feature-3, .feature-4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem !important;
+        width: 20%;
+        margin: 0rem 0.4rem 0rem 0.4rem !important;
+    }
+    .wifi, .sheild, .sun, .store {
+        font-size: 1rem;
+        padding: 0.5rem !important;
+    }
+    .para-feautres p {
+        display: none;
+    }
+    /* call */
+    .col-lg-9, .col-lg-3 {
+        text-align: center;
+    }
+    /* test */
+    .port-para {
+        width: 100%;
+        margin-left: 0rem !important;
+        padding: 1rem;
+    }
+    .test-item p {
+        width: 85%;
+    }
+    .carousel-inner {
+        height: 27rem;
+    }
+    .carousel-indicators [data-bs-target] {
+        position: relative;
+        top: 2rem;
+    }
+    /* Portfolio */
+    .portfolio {
+        padding-bottom: 0.500rem !important;
+    }
+    .port-4, .port-5, .port-6, .port-7, .port-8, .port-9 {
+        position: relative;
+        right: 0px !important;
+        left: 0px !important;
+        top: 0px !important;
+    }
+    /* contact */
+    .name input {
+        width: 100%;
+    }
+}
+
+/* Mobile col- */
+
+@media only screen and (max-width:576px) {
+    .navbar-nav li:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar-toggler {
+        background: transparent;
+        border: 0px solid white;
+        padding: 0rem !important;
+    }
+    .nav-link, .dropdown .btn {
+        color: black;
+        padding: 0.5rem !important;
+    }
+    .navbar-nav {
+        width: 100%;
+        border-radius: 1rem;
+        background-color: white;
+        padding: 0.2rem 0rem 0.2rem 0rem !important;
+    }
+    .dropdown .btn {
+        padding: 0rem 0rem 0rem 1rem !important;
+    }
+    .bar {
+        color: white;
+        font-size: 1.5rem;
+    }
+    /* carousel */
+    .carousel {
+        padding: 2.5rem 0.2rem 0rem 0.2rem !important;
+    }
+    .carousel-item h2 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .carousel-item p {
+        width: 70%;
+        font-size: 1.1rem !important;
+        margin: 0.5rem auto 2rem auto !important;
+        text-align: center;
+    }
+    /* features */
+    .features {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .row-features {
+        display: flex;
+        justify-content: center;
+    }
+    .feature-1, .feature-2, .feature-3, .feature-4 {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem !important;
+        width: 21%;
+        margin: 0rem 0.3rem 0rem 0.3rem !important;
+    }
+    .wifi, .sheild, .sun, .store {
+        font-size: 1rem;
+        padding: 0.3rem !important;
+    }
+    .para-feautres p {
+        display: none;
+    }
+    /* call */
+    .col-lg-9, .col-lg-3 {
+        text-align: center;
+    }
+    /* test */
+    .port-para {
+        width: 100%;
+        margin-left: 0rem !important;
+        padding: 1.2rem;
+    }
+    .test-item p {
+        width: 95%;
+    }
+    .carousel-inner {
+        height: 35.5rem;
+    }
+    .carousel-indicators [data-bs-target] {
+        position: relative;
+        top: 2rem;
+    }
+    /* Portfolio */
+    .portfolio {
+        padding-bottom: 0.500rem !important;
+    }
+    .port-4, .port-5, .port-6, .port-7, .port-8, .port-9 {
+        position: relative;
+        right: 0px !important;
+        left: 0px !important;
+        top: 0px !important;
+    }
+    /* contact */
+    .name input {
+        width: 100%;
+    }
+    .port-icon {
+        margin-right: 0rem !important;
+    }
+}
